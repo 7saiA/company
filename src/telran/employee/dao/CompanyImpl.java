@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.function.Predicate;
 
 public class CompanyImpl implements Company {
-    private List<Employee> employees;
-    private int capacity;
+    private final List<Employee> employees;
+    private final int capacity;
 
     public CompanyImpl(int capacity) {
         this.capacity = capacity;
